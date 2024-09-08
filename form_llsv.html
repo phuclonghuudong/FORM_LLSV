@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LÝ LỊCH SINH VIÊN</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <header>
+      <div style="text-align: center; background-color: bisque; padding: 10px">
+        <h2>TRƯỜNG ĐẠI HỌC QUỐC GIA</h2>
+        <h3>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</h3>
+      </div>
+    </header>
+
+    <div style="text-align: center; padding-top: 10px">
+      <h2>KHAI BÁO LÝ LỊCH SINH VIÊN</h2>
+      <p class="text-dark-emphasis">(Dành 1cho đối tượng là sinh viên của trường)</p>
+    </div>
+
+    <div class="p-1 mb-2 bg-danger text-white">
+      <h5 class="text-white fw-bolder mb-1">THÔNG TIN SINH VIÊN</h5>
+    </div>
+
+    <div class="row">
+      <div class="mb-3 col-8">
+        <label for="txtHoTen" class="form-label fw-semibold">Họ tên sinh viên <span class="text-danger">*</span></label>
+        <input type="text" class="form-control text-dark-emphasis" id="txtHoten" placeholder="" />
+      </div>
+      <div class="mb-3 col-4">
+        <label for="textGioiTinh" class="form-label fw-semibold">Giới tính <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option value="1">Nam</option>
+          <option value="2">Nữ</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3 col-8">
+        <label for="txtMSSV" class="form-label fw-semibold"
+          >Mã số sinh viên/ Mã số học viên <span class="text-danger">*</span></label
+        >
+        <input type="text" class="form-control text-dark-emphasis" id="txtMSSV" placeholder="" />
+      </div>
+      <div class="mb-3 col-4">
+        <label for="texLop" class="form-label fw-semibold">Mã Lớp <span class="text-danger">*</span></label>
+        <input type="text" class="form-control text-dark-emphasis" id="texLop" placeholder="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mb-3 col-4">
+        <label for="textDienThoai" class="form-label fw-semibold"
+          >Điện thoại sinh viên <span class="text-danger">*</span></label
+        >
+        <input type="text" class="form-control text-dark-emphasis" id="textDienThoai" placeholder="" />
+      </div>
+      <div class="mb-3 col-8">
+        <label for="txtEmail" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+        <input type="email" class="form-control text-dark-emphasis" id="txtEmail" placeholder="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mb-3 col-4">
+        <label for="txtCCCD" class="form-label fw-semibold">CCCD/CC <span class="text-danger">*</span></label>
+        <input type="text" class="form-control text-dark-emphasis" id="txtCCCD" placeholder="" />
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtQuocTich" class="form-label fw-semibold">Quốc tịch <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected>Việt Nam</option>
+        </select>
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtDanToc" class="form-label fw-semibold">Dân tộc <span class="text-danger"></span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected>Kinh</option>
+          <option value="1">Khơ me</option>
+          <option value="2">Hoa</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mb-3 col-4">
+        <label for="txtNgaySinh" class="form-label fw-semibold">Ngày sinh <span class="text-danger">*</span></label>
+        <input type="date" class="form-control text-dark-emphasis" id="txtNgaySinh" placeholder="" />
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtNoiSinh" class="form-label fw-semibold">Nơi sinh <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="0">Tỉnh Long An</option>
+          <option value="1">Thành phố Hồ Chí Minh</option>
+          <option value="2">Tỉnh Tiền Giang</option>
+        </select>
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtTonGiao" class="form-label fw-semibold">Tôn giáo <span class="text-danger"></span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Phật Giáo</option>
+          <option value="2">Cao Đài</option>
+          <option value="3">Tin Lành</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3 col-4">
+        <label for="txtYear" class="form-label fw-semibold">Năm tốt nghiệp</label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected>2024</option>
+          <option value="1">2025</option>
+          <option value="2">2026</option>
+          <option value="3">2027</option>
+        </select>
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtKhoa" class="form-label fw-semibold">Khoa <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Khoa Công nghệ Thông tin</option>
+          <option value="2">Khoa Kế toán</option>
+          <option value="3">Khoa Quản trị Kinh doanh</option>
+        </select>
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtNganh" class="form-label fw-semibold">Ngành <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Ngành Công nghệ Phần Mềm</option>
+          <option value="2">Ngành Lập trình WEB</option>
+          <option value="3">Ngành IT</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 fw-semibold">
+        <p>Sinh viên theo học Chương trình hệ: <span class="text-danger">*</span></p>
+      </div>
+      <div class="form-check col-2">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+        <label class="form-check-label fw-semibold" for="flexRadioDefault1"> Cao Đẳng </label>
+      </div>
+      <div class="form-check col-2">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+        <label class="form-check-label fw-semibold" for="flexRadioDefault1"> Đại Học </label>
+      </div>
+    </div>
+
+    <div class="p-1 mb-3 mt-3 bg-danger">
+      <h5 class="text-white fw-bolder mb-1">THÔNG TIN LIÊN HỆ</h5>
+    </div>
+
+    <div class="row">
+      <div class="mb-3 col-12">
+        <label for="txtAddress" class="form-label fw-semibold"
+          >Địa chỉ thường trú <span class="text-danger">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control text-dark-emphasis"
+          id="txtAddress"
+          placeholder="Số nhà, khu phố, tên đường,..."
+        />
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtTinh" class="form-label fw-semibold">Tỉnh <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Tỉnh Long An</option>
+          <option value="1">Thành phố Hồ Chí Minh</option>
+          <option value="2">Tỉnh Tiền Giang</option>
+        </select>
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtHuyen" class="form-label fw-semibold">Quận/Huyện <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Huyện Cần Đước</option>
+          <option value="2">Huyện Cần Giuộc</option>
+          <option value="3">Huyện Bến Lức</option>
+        </select>
+      </div>
+      <div class="mb-3 col-4">
+        <label for="txtXa" class="form-label fw-semibold">Xã/Phường <span class="text-danger">*</span></label>
+        <select class="form-select text-dark-emphasis" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Xã Long Hựu Đông</option>
+          <option value="2">Xã Long Hựu Tây</option>
+          <option value="3">Xã Long Khê</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="p-1 mb-4 mt-4 bg-body-secondary text-dark-emphasis" style="text-align: center">
+      <h6 class="mt-1">Tôi xin cam đoan những thông tin trên là đúng sự thật.</h6>
+      <h6 class="mb-1">Nếu sai, tôi xin hoàn toàn chịu trách nhiệm và chịu xử lý theo quy định hiện hành.</h6>
+    </div>
+
+    <div class="" style="text-align: center">
+      <button type="button" class="btn btn-danger btn-lg">XEM HỒ SƠ</button>
+    </div>
+    <footer style="height: 100px"></footer>
+  </body>
+</html>
